@@ -1,0 +1,172 @@
+.logo {
+  color: rgb(139, 137, 100);
+}
+
+span {
+  color: #7fca6d;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #50ce2a !important;
+}
+
+.container {
+  width: 100%;
+  margin-top: 120px;
+  margin-left: 40px;
+  display: flex;
+  gap: 60px;
+  flex-wrap: wrap;
+  align-items: center; /* ✅ vertically aligns text and image */
+}
+
+/* ✅ Grouped h1 and p under a new class `.content` */
+.content {
+  width: 45%;
+}
+
+/* ✅ Heading styling */
+.content h1 {
+  font-size: 60px;
+  font-weight: 700;
+  margin-bottom: 30px; /* ✅ space between h1 and p */
+}
+
+/* ✅ Paragraph below h1 */
+.content p {
+  font-weight: 450;
+  font-size: 22px;
+  margin-bottom: 50px;
+  line-height: 1.6;
+}
+
+/* ✅ Image styling with hover effect */
+.container img {
+  width: 600px;
+  height: 600px;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  border-radius: 10px;
+}
+
+.container img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* ✅ Responsive font size */
+@media (max-width: 700px) {
+  .container {
+    font-size: 20px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .content,
+  .container img {
+    width: 100%;
+    text-align: center;
+  }
+
+  .container img {
+    height: auto;
+  }
+}
+/* Feature  */
+.icon {
+  display: flex;
+}
+.f h5 {
+  font-size: 30px;
+  font-weight: 500;
+}
+.f p {
+  font-size: 18px;
+  font-weight: 400;
+  width: 80%;
+}
+.card mb-3 {
+  width: 100%;
+}
+.col-md-4 {
+  height: 400px;
+}
+.col-md-4 img {
+  height: 400px;
+  padding: 25px;
+}
+.image-box img {
+  border-radius: 10px;
+}
+@media (max-width: 700px) {
+  .icon {
+    flex-direction: column;
+  }
+  .col-md-4 {
+    height: 250px;
+  }
+  .col-md-4 img {
+    height: 300px;
+    padding: 25px;
+  }
+}
+/*  Collection */
+
+.carousel slide {
+  width: 100%;
+}
+#carouselExampleCaptions {
+  width: 100%;
+}
+.h {
+  font-size: 50px;
+}
+.card-1 {
+  height: 500px;
+  width: 50%;
+}
+.card-1 img {
+  width: 22rem;
+  height: 400px;
+}
+.pic {
+  gap: 40px;
+}
+/* @media (max-width: 700px) {
+  .carousel slide {
+    width: 360px;
+  }
+  .h {
+    font-size: 25px;
+  }
+  .card-1 {
+    height: 250px;
+    width: 25%;
+  }
+  .card-1 img {
+    width: 18.4rem;
+    height: 300px;
+  }
+} */
+@media (max-width: 700px) {
+  .pic {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .card-1 {
+    width: 90% !important;
+    height: auto;
+  }
+
+  .card-1 img {
+    width: 100%;
+    height: auto;
+  }
+}
+footer {
+  text-align: center;
+  justify-content: center;
+  font-size: 25px;
+}
